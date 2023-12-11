@@ -1,4 +1,16 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_widget(form) }}
+
+<input type="text" name="name" placeholder="nom">
+<input type="text" name="adress" placeholder="adresse">
+<input type="file" name="logo" placeholder="logo">
+<input name="banner" placeholder="banner">
+<input name="email" placeholder="email">
+<input name="tel" placeholder="Nuemro de telephone">
+<input type="text" name="text" placeholder="tax_number">
+<input type="text" name="siret_number" placeholder="siret_number">
+<input type="number" name="likes" placeholder="likes">
+
+<button class="btn">{{ button_label|default('Save') }}</button>
+
 {{ form_end(form) }}
